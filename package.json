@@ -23,6 +23,11 @@
     "@shelex/cypress-allure-plugin": "^2.34.0",
     "cypress": "^12.0.2",
     "esbuild": "^0.16.4",
-    "multiple-cucumber-html-reporter": "^3.0.1"
+    "multiple-cucumber-html-reporter": "^3.3.0"
+  },
+  "dependencies": {
+    "@deepakvishwakarma/cucumber-json-formatter": "^0.0.3",
+    "cucumber-html-report": "^0.6.5",
+    "cypress-esbuild-preprocessor": "^1.0.2"
   }
 }
