@@ -30,5 +30,9 @@ Install project dependencies with: npm i
    3. allure open
    4. You'll get a report like this one: GitHub Page - Allure Report Sample: https://joanesquivel.github.io/cypress-cucumber-boilerplate/
 3. Visual Execution: npx cypress open
+   1. Select E2E
+   2. Select Chrome
+   3. Open specs
+   4. Run chosen specs
 
 
