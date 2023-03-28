@@ -1,9 +1,9 @@
 #Base image taken from:https://hub.docker.com/r/cypress/browsers/tags
 FROM cypress/browsers:node-16.18.1-chrome-109.0.5414.74-1-ff-109.0-edge-109.0.1518.52-1
 #Create the folder where our project will be stored
-RUN mkdir /cucumberproject
+RUN mkdir /cypresscucumberproject
 #We make it our workdirectory
-WORKDIR /cucumberproject
+WORKDIR /cypresscucumberproject
 #Let's copy the essential files that we MUST use to run our scripts.
 COPY ./package.json .
 COPY ./jsconfig.json .
@@ -18,7 +18,7 @@ ENTRYPOINT ["npx","cypress","run"]
 CMD [""]  
 
 #To build this image just use the following command line(just as an example, use your tag name:version as prefered.):
-#docker build -t cucumberproject:1.0 .
+#docker build -t cypresscucumberproject:1.0 .
 
 #To run an example:
 #TAG INSTANCE: docker run -i -t cucumberproject:1.0 cypress run --spec cypress/e2e/features/* --env tags=@mobile
