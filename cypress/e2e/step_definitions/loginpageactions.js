@@ -41,3 +41,13 @@ Then("Box should display check", () => {
 Then("Box should not display check", () => {
     cy.get('.uni-form__check-item').should('have.class', 'uni-form__check-item').should('not.have.class', 'uni-form__check-item--is-checked');
 })
+
+//Sign up functionality
+When("User clicks sign up", () => {
+    cy.get('[href="/register/signup"]').click();
+})
+
+Then("User successfully on Request demo page", () => {
+    cy.get("#register_demo").should('be.visible');
+    cy.get("#register_elite-contact").should('be.visible');
+})
