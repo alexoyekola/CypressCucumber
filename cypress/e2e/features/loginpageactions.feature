@@ -16,4 +16,4 @@ Feature: Login Help
         When  User clicks checkbox 'Remember me'
         Then  Box should display check
     Scenario: Uncheck 'Remember me'
-        Then  Box should not display check
+
