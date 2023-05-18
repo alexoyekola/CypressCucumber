@@ -21,6 +21,7 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
+  projectId: 'ikvpmf',
   e2e: {
     setupNodeEvents,
     specPattern: "cypress/e2e/features/*.feature",
